@@ -41,7 +41,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Generate fake data for testing the database
 gem 'faker'
 
-# Generate form
+# Generate form boostrap
+gem 'autoprefixer-rails'
+gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
 
 group :development, :test do

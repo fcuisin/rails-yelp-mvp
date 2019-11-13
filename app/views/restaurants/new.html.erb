@@ -1,5 +1,8 @@
-  <h1>Add a new Restaurant</h1>
+<nav class="navbar navbar-light bg-dark">
+  <span class="navbar-brand mb-0 h1 text-light">Add a new restaurant</span>
+  <%= link_to 'Back', restaurants_path, class: "btn btn-outline-primary" %>
+</nav>
 
-<%= render 'form_for', restaurant: @restaurant %>
-
-<%= link_to 'Back', restaurants_path %>
+<div class="my-2">
+  <%= render 'form_for', restaurant: @restaurant %>
+</div>

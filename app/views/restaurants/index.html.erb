@@ -1,13 +1,12 @@
-<h1>Restaurants</h1>
+<nav class="navbar navbar-light bg-dark">
+  <span class="navbar-brand mb-0 h1 text-light">Restaurants Application</span>
+  <%= link_to "Add a new restaurant", new_restaurant_path, class: "btn btn-primary"%>
+</nav>
 
-<table>
-  <tbody>
+<div>
+  <ul class="list-group list-group-flush">
     <% @restaurants.each do |restaurant| %>
-      <tr>
-        <td><%= link_to restaurant.name, restaurant_path(restaurant) %></td>
-      </tr>
+      <li class="list-group-item"><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
     <% end %>
-  </tbody>
-</table>
-<br>
-<%= link_to "Add a new restaurant", new_restaurant_path, class: "btn btn-primary"%>
+  </ul>
+</div>
